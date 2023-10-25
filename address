@@ -1,9 +1,24 @@
-pravesh kaloji
-address pawanwada pernem goa
-fdgjkgbdjf hg hg
-hjkh
-kkg
-axjb
-mayyyy
-aaaaaaaaaaaaaaaaaaa
-bbbbbbbbbbbbbbbbbbbbbbbb
+ublic class jform {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "C:/SEllenium/chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		/**
+		 * @author Lenovo
+		 */
+		driver.get("https://form.jotform.com/232975339389070");
+        driver.findElement(By.id("first_3")).sendKeys("sank");
+        driver.findElement(By.id("last_3")).sendKeys("nai");
+        driver.findElement(By.id("input_5")).sendKeys("mayekarmayur1122@yahoo.com");
+        driver.findElement(By.id("input_6_addr_line1")).sendKeys("dhargal pernem");
+        driver.findElement(By.id("input_6_addr_line2")).sendKeys("gado");
+        driver.findElement(By.id("input_6_city")).sendKeys("pern");
+        driver.findElement(By.id("input_6_state")).sendKeys("goa");
+        driver.findElement(By.id("input_6_postal")).sendKeys("40386525");
+        //driver.findElement(By.id("input_2")).click();
+        WebElement submitBtn=driver.findElement(By.id("id_2"));
+        submitBtn.click();
+        driver.close();
+	}
+
+}
